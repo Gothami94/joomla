@@ -1,0 +1,151 @@
+fieldset a#view {
+	float: left;
+	width: auto;
+	margin: 10px 5px 5px 0pt;
+	font-size: 12px;
+}
+
+fieldset.panelform label, fieldset.panelform div.paramrow label, fieldset.panelform span.faux-label {
+    max-width:100%; min-width:230px;
+}
+
+div.width-60 fieldset.adminform p {
+	padding:10px;
+}
+
+.templateinfo {
+	width: 600px;
+}
+
+.templateinfo h4 {
+	
+	text-transform:uppercase;
+    color: #555;
+    font-weight: bold;
+    font-size: 13px;
+    min-height: 32px;
+    clear: both;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #d6d6d6;
+    margin: 5px;
+    padding-left:15px;
+    text-shadow:1px 1px #ccc;
+    display: block;
+    line-height: 30px;
+    position: relative;  
+    -moz-box-shadow:    1px 1px 1px #eee;
+  	-webkit-box-shadow: 1px 1px 1px #eee;
+  	box-shadow:         1px 1px 1px #eee;
+}
+
+.fltrt fieldset.panelform label{
+    color: #444;
+    display: block;
+    font-size: 12px;
+    font-style:italic;
+    font-weight: bold;
+    line-height: 36px;
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0;
+    text-align: right !important;
+    text-shadow: 1px 1px #FFFFFF !important;
+    border-bottom:1px dashed #dddddd;
+}
+
+
+/* Info Box */
+.infoBox, .noticeBox {padding:6px; margin:10px 5px 5px 0px;}
+.infoBox .info {
+    color: #fff;
+    font-size: 14px;
+    clear: both;
+    line-height: 18px;
+    background: #50b5f9; /* Old browsers */
+    background: -moz-linear-gradient(top, #9494C6 0%, #4A4A80 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9494C6), color-stop(99%,#4A4A80)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #9494C6 0%,#4A4A80 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #9494C6 0%,#4A4A80 99%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #9494C6 0%,#4A4A80 99%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9494C6', endColorstr='#4A4A80',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #9494C6 0%,#4A4A80 99%); /* W3C */
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 10px 15px;
+    text-shadow:1px 1px #59599A;
+    display: block;
+    position: relative;  
+}
+
+.noticeBox .info{
+	color: #555;
+    font-size: 14px;
+    clear: both;
+    line-height: 18px;
+    background: url("../images/admin/notice.png") no-repeat scroll 5px center #eeeeee;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border:1px solid #d6d6d6;
+    padding: 12px 15px 12px 50px;
+    text-shadow:1px 1px #fff;
+    display: block;
+    position: relative;  
+}
+
+/* Title Box */
+.titleBox {clear: both; float:left; padding:6px; margin:5px 5px 5px 0px;}
+.titleBox .info {
+    color: #555;
+    font-size: 12px;
+    clear: both;
+    line-height: 18px;
+    background: #fefefe; /* Old browsers */
+    background: -moz-linear-gradient(top, #fefefe 0%, #e6e6e6 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(99%,#e6e6e6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fefefe 0%,#e6e6e6 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fefefe 0%,#e6e6e6 99%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #fefefe 0%,#e6e6e6 99%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #fefefe 0%,#e6e6e6 99%); /* W3C */
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #d6d6d6;
+    margin: 0px;
+    padding: 5px 10px;
+    text-shadow:1px 1px #fff;
+    display: block;
+    position: relative;  
+    min-width:200px;
+}
+
+#foot-container{
+	padding-left:8px;
+	max-width:700px;
+}
+
+#foot-left {
+	padding-left:15px;
+	float: left;
+}
+
+#foot-right {
+	float:right;
+
+	padding-top:10px;
+
+	text-align:right;
+
+	line-height: 16px;
+}
+
+.cc-spacer {
+	padding-top: 5px;
+}
+
+.cc-spacer-25 {
+	padding-top: 30px;
+}

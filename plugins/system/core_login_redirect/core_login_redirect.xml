@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_CORE_LOGIN_REDIRECT_XML_TITLE</name>
+	<author>Joomladds @ River Media</author>
+	<creationDate>April 2015</creationDate>
+	<copyright>Copyright (C) 2013-2015 River Media. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joomladds.com</authorEmail>
+	<authorUrl>http://joomladds.com</authorUrl>
+	<version>1.9.0</version>
+	<description>PLG_SYSTEM_CORE_LOGIN_REDIRECT_XML_DESCRIPTION</description>
+	<files>  	
+		<filename plugin="core_login_redirect">core_login_redirect.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>fields</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_core_login_redirect.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_core_login_redirect.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/core_login_redirect/fields">
+			<fieldset name="customize">
+				<field
+					type="break"
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_TITLE_REGISTRATION" />
+				<field
+					name="custom_register"
+					type="list"
+					default="cb"
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_REGISTER_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_REGISTER_DESC">
+					<option
+						value="joomla">PLG_SYSTEM_CORE_LOGIN_REDIRECT_JOOMLA_OPTION</option>
+					<option
+						value="cb">PLG_SYSTEM_CORE_LOGIN_REDIRECT_COMMUNITY_BUILDER_OPTION</option>
+					<option
+						value="js">PLG_SYSTEM_CORE_LOGIN_REDIRECT_JOMSOCIAL_OPTION</option>
+					<!--<option value="jw">PLG_SYSTEM_CORE_LOGIN_REDIRECT_JOMWALL_OPTION</option>-->
+					<option
+						value="custom">PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_OPTION</option>
+				</field>		
+				<field
+					name="custom_register_menu"
+					showon="custom_register:custom"
+					type="menuitem"
+					disable="separator"
+					default=""
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_REGISTER_MENU_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_REGISTER_MENU_DESC">
+					<option value="">-- Select --</option>
+				</field>
+				<field
+					name="custom_register_url"
+					showon="custom_register:custom"
+					type="text"
+					size="30"
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_REGISTER_URL_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_REGISTER_URL_DESC" />
+
+				<field
+					type="break"
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_TITLE_LOGIN" />
+				<field
+					name="custom_login"
+					type="list"
+					default="cb"
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_LOGIN_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_LOGIN_DESC">
+					<option
+						value="joomla">PLG_SYSTEM_CORE_LOGIN_REDIRECT_JOOMLA_OPTION</option>
+					<option
+						value="cb">PLG_SYSTEM_CORE_LOGIN_REDIRECT_COMMUNITY_BUILDER_OPTION</option>
+					<option
+						value="js">PLG_SYSTEM_CORE_LOGIN_REDIRECT_JOMSOCIAL_OPTION</option>
+					<!--<option value="jw">PLG_SYSTEM_CORE_LOGIN_REDIRECT_JOMWALL_OPTION</option>-->
+					<option
+						value="custom">PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_OPTION</option>
+				</field>		
+				<field
+					name="custom_login_menu"
+					showon="custom_login:custom"
+					type="menuitem"
+					disable="separator"
+					default=""
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_LOGIN_MENU_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_LOGIN_MENU_DESC">
+					<option
+						value="">-- Select --</option>
+				</field>
+
+				<field
+					type="break"
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_TITLE_PROFILE" />
+				<field
+					name="custom_profile"
+					type="list"
+					default="cb"
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_PROFILE_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_PROFILE_DESC">
+					<option
+						value="joomla">PLG_SYSTEM_CORE_LOGIN_REDIRECT_JOOMLA_OPTION</option>
+					<option
+						value="cb">PLG_SYSTEM_CORE_LOGIN_REDIRECT_COMMUNITY_BUILDER_OPTION</option>
+					<option
+						value="js">PLG_SYSTEM_CORE_LOGIN_REDIRECT_JOMSOCIAL_OPTION</option>
+					<!--<option value="jw">PLG_SYSTEM_CORE_LOGIN_REDIRECT_JOMWALL_OPTION</option>-->
+					<option
+						value="custom">PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_OPTION</option>
+				</field>		
+				<field
+					name="custom_profile_menu"
+					showon="custom_profile:custom"
+					type="menuitem"
+					disable="separator"
+					default=""
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_PROFILE_MENU_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_PROFILE_MENU_DESC">
+					<option
+						value="">-- Select --</option>
+				</field>
+				<field
+					name="custom_profile_url"
+					showon="custom_profile:custom"
+					type="text"
+					size="30"
+					default=""
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_PROFILE_URL_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_PROFILE_URL_DESC" />
+
+				<field
+					type="break"
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_TITLE_PASSWORD" />
+				<field
+					name="custom_password"
+					type="list"
+					default="cb"
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_PASSWORD_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_PASSWORD_DESC">
+					<option
+						value="joomla">PLG_SYSTEM_CORE_LOGIN_REDIRECT_JOOMLA_OPTION</option>
+					<option
+						value="cb">PLG_SYSTEM_CORE_LOGIN_REDIRECT_COMMUNITY_BUILDER_OPTION</option>
+					<option
+						value="custom">PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_OPTION</option>
+				</field>		
+				<field
+					name="custom_password_menu"
+					showon="custom_password:custom"
+					type="menuitem"
+					disable="separator"
+					default=""
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_PASSWORD_MENU_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_PASSWORD_MENU_DESC">
+					<option
+						value="">-- Select --</option>
+				</field>
+				<field
+					name="custom_password_url"
+					showon="custom_password:custom"
+					type="text"
+					size="30"
+					default=""
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_PASSWORD_URL_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_PASSWORD_URL_DESC" />
+
+				<field
+					type="break"
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_TITLE_USERNAME" />
+				<field
+					name="custom_username"
+					type="list"
+					default="cb"
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_USERNAME_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_USERNAME_DESC">
+					<option
+						value="joomla">PLG_SYSTEM_CORE_LOGIN_REDIRECT_JOOMLA_OPTION</option>
+					<option
+						value="cb">PLG_SYSTEM_CORE_LOGIN_REDIRECT_COMMUNITY_BUILDER_OPTION</option>
+					<option
+						value="custom">PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_OPTION</option>
+				</field>		
+				<field
+					name="custom_username_menu"
+					showon="custom_username:custom"
+					type="menuitem"
+					disable="separator"
+					default=""
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_USERNAME_MENU_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_USERNAME_MENU_DESC">
+					<option value="">-- Select --</option>
+				</field>
+				<field
+					name="custom_username_url"
+					showon="custom_username:custom"
+					type="text"
+					size="30"
+					default=""
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_USERNAME_URL_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_USERNAME_URL_DESC" />
+
+				<field
+					type="break"
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_TITLE_LOGOUT" />
+				<field
+					name="custom_logout"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_LOGOUT_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_LOGOUT_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				<field
+					name="custom_logout_menu"
+					showon="custom_logout:1"
+					type="menuitem"
+					disable="separator"
+					default=""
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_LOGOUT_MENU_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_LOGOUT_MENU_DESC">
+					<option
+						value="">-- Select --</option>
+				</field>
+				<field
+					name="custom_logout_url"
+					showon="custom_logout:1"
+					type="text"
+					size="30"
+					default=""
+					label="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_LOGOUT_URL_LABEL"
+					description="PLG_SYSTEM_CORE_LOGIN_REDIRECT_CUSTOM_LOGOUT_URL_DESC" />
+
+			</fieldset>
+			
+			<fieldset
+				name="advanced">
+				<field
+					name="dev_mode"
+					type="radio"
+					default="0"
+					class="btn-group"
+					label="Enable Dev Mode?"
+					description="Enable if you need to test this module.">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="JoomLadds Update Site">http://joomladds.com/index.php?option=com_ars&amp;view=update&amp;task=stream&amp;format=xml&amp;id=9</server>
+	</updateservers>
+</extension>

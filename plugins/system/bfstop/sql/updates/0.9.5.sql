@@ -1,0 +1,1 @@
+-- Dummy SQL file to set schema version to 0.9.5 so next update will work
