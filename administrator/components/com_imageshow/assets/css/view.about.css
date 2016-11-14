@@ -1,0 +1,12 @@
+/**
+ * @author JoomlaShine.com Team
+ * @copyright JoomlaShine.com
+ * @link joomlashine.com
+ * @package JSN ImageShow
+ * @version $Id: imageshow.css 13748 2012-07-03 12:13:32Z thangbh $
+ * @license GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+#toolbar .jsn-drop-menu .navbar .nav > li > button {
+	margin-bottom: -15px;
+}
