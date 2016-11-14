@@ -12,10 +12,10 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
-	public $host = 'localhost';
-	public $user = 'root';
-	public $password = '';
-	public $db = 'joomla';
+	public $host = 'us-cdbr-azure-central-a.cloudapp.net';
+	public $user = 'b66f6b944d89cf';
+	public $password = '0e777102';
+	public $db = 'shoppingcartgo';
 	public $dbprefix = 'frxwo_';
 	public $live_site = '';
 	public $secret = '3uNhPV5woF9O5NQT';
