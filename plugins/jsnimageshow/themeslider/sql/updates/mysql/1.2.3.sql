@@ -1,0 +1,1 @@
+ALTER TABLE `#__imageshow_theme_slider` ADD COLUMN `transition_speed` char(150) DEFAULT 1;

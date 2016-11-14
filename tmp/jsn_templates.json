@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JoomlaShine Templates Demo</title>
+    <!-- META FOR IOS & HANDHELD -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <!-- //META FOR IOS & HANDHELD -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/core.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/landpage.css" />
+     <!--  <link rel="stylesheet" type="text/css" href="css/loaders.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/loaders.css" />
+    <!-- MEDIA QUERIES -->
+    <link rel="stylesheet" type="text/css" href="css/screens/tablet.css" media="only screen and (min-width:720px) and (max-width: 979px)" />
+    <link rel="stylesheet" type="text/css" href="css/screens/wide.css" media="only screen and (min-width:980px)" />
+    <!-- //MEDIA QUERIES -->
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <!-- script type="text/javascript" src="js/jquery.ckie.js"></script -->
+    <script type="text/javascript" src="js/jquery.nicescroll.340/jquery.nicescroll.min.js"></script>
+<!--[if lt IE 9]>
+        <script type="text/javascript" src="js/jquery.mediaqueries.js"></script>
+        <![endif]-->
+		<script type="text/javascript" src="js/detectmobilebrowser.js"></script>
+        <script type="text/javascript" src="js/script2.js?v=5"></script>
+        <script>
+            document.addEventListener("touchstart", function(){}, true);
+        </script>
+        <style type="text/css">
+            #myList li{ display:none;
+                }
+                #loadMore {
+                    color:green;
+                    cursor:pointer;
+                }
+                #loadMore:hover {
+                    color:black;
+                }
+                #showLess {
+                    color:red;
+                    cursor:pointer;
+                }
+                #showLess:hover {
+                    color:black;
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                size_li = $("#myList li").size();
+                x=12;
+                $('#myList li:lt('+x+')').show();
+                $('#loadMore').click(function () {
+                    x= (x+12 <= size_li) ? x+12 : size_li;
+                    $('#myList li:lt('+x+')').show();
+
+                    if( size_li == x ) {
+                        $( '#loadMore' ).hide();
+                    }
+
+
+                });
+                $('#showLess').click(function () {
+                    x=(x-1<0) ? 1 : x-1;
+                    $('#myList li').not(':lt('+x+')').hide();
+                });
+            });
+        </script>
+    </head>
+    <body>
+                <div id="jsn-landpage">
+            <div id="jsn-title">
+                <div class="jsn-wrap">
+                    <h1 class="logo"><img src="images/logo.png" alt="logo"/></h1>
+                    <ul>
+                        <li> <a href="#ex">Joomla Extensions</a> </li>
+                        <li> <a href="#tpl">Joomla Templates</a> </li>
+                        <li> <a href="#pack">JSN Template developer package</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="jsn-landpage-ex" id="ex">
+                <div class="jsn-wrap">
+                    <div style="text-align:center">
+                        <h2>Joomla Extensions</h2>
+                    </div>
+                    <div class="grid-layout">
+                        <div class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsn-ex-item">
+                                    <div id="jsn-easyslider">
+                                        <h3 class=""><span>JSN EasySlider</span></h3>
+                                        <p>JSN EasySlider is a multipurpose Joomla slider extension to make brilliant visual presentation with ease</p>
+                                    </div>
+                                    <div class="item-mark">
+                                        <div class="item-button-contain">
+                                            <a href="http://demo.joomlashine.com/joomla-extensions/jsn-easyslider/quick-tour-slider.html" target="blank" class="link-button button-green">Demo</a>
+                                            <a href="http://www.joomlashine.com/joomla-extensions/jsn-easyslider-joomla-slider-extension.html" class="link-button button-orange">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsn-ex-item">
+                                    <div id="jsn-poweradmin">
+                                        <h3 class=""><span>JSN PowerAdmin</span></h3>
+                                        <p>JSN PowerAdmin was built with one single goal: to help people manage their <a href="http://www.joomlashine.com/joomla-extensions/jsn-poweradmin-joomla-admin-extension.html">Joomla admin</a> with ease and joy.</p>
+                                    </div>
+                                    <div class="item-mark">
+                                        <div class="item-button-contain">
+                                            <a href="http://demo.joomlashine.com/joomla-extensions/jsn-poweradmin.html" target="blank" class="link-button button-green">Demo</a>
+                                            <a href="http://www.joomlashine.com/joomla-extensions/jsn-poweradmin-joomla-admin-extension.html" class="link-button button-orange">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-col">    
+                            <div class="grid-col_inner">
+                                <div class="jsn-ex-item">
+                                    <div id="jsn-pagebuilder">
+                                        <h3 class=""><span>JSN PageBuilder</span></h3>
+                                        <p>JSN PageBuilder provides you the easiest way to build and manage <a href="http://www.joomlashine.com/joomla-extensions/jsn-pagebuilder-joomla-page-builder-extension.html">Joomla pages</a>. </p>
+                                    </div>
+                                    <div class="item-mark">
+                                        <div class="item-button-contain">
+                                            <a href="http://demo.joomlashine.com/joomla-extensions/jsn-pagebuilder/jsn-pagebuilder-overview.html?utm_source=Extension-Page&utm_medium=Button&utm_campaign=JSNPageBuilder" class="link-button button-green">Demo</a>
+                                            <a href="http://www.joomlashine.com/joomla-extensions/jsn-pagebuilder-joomla-page-builder-extension.html" class="link-button button-orange">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsn-ex-item">
+                                    <div id="jsn-imageshow">
+                                        <h3 class=""><span>JSN ImageShow</span></h3>
+                                        <p>JSN ImageShow is one of the first <a href="http://www.joomlashine.com/joomla-extensions/jsn-imageshow-joomla-gallery-extension.html">Joomla gallery</a> plugins that displays your image slideshow in a lively and truthful way.</p>
+                                    </div>
+                                    <div class="item-mark">
+                                        <div class="item-button-contain">
+                                            <a href="http://demo.joomlashine.com/joomla-extensions/jsn-imageshow.html" target="blank" class="link-button button-green">Demo</a>
+                                            <a href="http://www.joomlashine.com/joomla-extensions/jsn-imageshow-joomla-gallery-extension.html" class="link-button button-orange">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsn-ex-item">
+                                    <div id="jsn-uniform">
+                                        <h3 class=""><span>JSN UniForm</span></h3>
+                                        <p>JSN Uniform was designed to be the simplest and easiest to use <a href="http://www.joomlashine.com/joomla-extensions/jsn-uniform-joomla-contact-form-extension.html">Joomla form</a> management among other extensions.</p> 
+                                    </div>
+                                    <div class="item-mark">
+                                        <div class="item-button-contain">
+                                            <a class="link-button button-green" href="http://demo.joomlashine.com/joomla-extensions/jsn-uniform/jsn-uniform-overview.html">Demo</a>
+                                            <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-extensions/jsn-uniform-joomla-contact-form-extension.html">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsn-ex-item">
+                                    <div id="jsn-mobilize">
+                                        <h3 class=""><span>JSN Mobilize</span></h3>
+                                        <p>JSN Mobilize is considered to be the stress-free <a href="http://www.joomlashine.com/joomla-extensions/jsn-mobilize-joomla-mobile-extension.html">Joomla mobile</a> creator to make mobilizing easy.</p>
+                                    </div>
+                                    <div class="item-mark">
+                                        <div class="item-button-contain">
+                                            <a href="http://demo.joomlashine.com/joomla-extensions/jsn-mobilize.html" target="blank" class="link-button button-green">Demo</a>
+                                            <a href="http://www.joomlashine.com/joomla-extensions/jsn-mobilize-joomla-mobile-extension.html" class="link-button button-orange">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-col">
+
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="jsn-landpage-tpl" id="tpl">
+                <div class="jsn-wrap">
+                    <div style="text-align:center">
+                        <h2>Joomla Templates</h2>
+                    </div>
+                    <ul id="myList" class="jsn-list-tpl clearafter">
+                         <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="https://www.joomlashine.com/images/templates/jsn-medis.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_medis">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-medis-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Medis</h3>
+                                    <p class="item-description">Practical and Content-rich Medical template</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="https://www.joomlashine.com/images/templates/jsn-levart.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_levart">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-levart-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Levart</h3>
+                                    <p class="item-description">Turns your travel site into a real booking destination</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="https://www.joomlashine.com/images/templates/jsn-artista.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_artista">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-artista-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Artista</h3>
+                                    <p class="item-description">Standout Joomla portfolio photography template</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="https://www.joomlashine.com/images/templates/jsn-reta.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_reta">Demo</a>
+                                                    <a class="link-button button-orange" href="https://www.joomlashine.com/joomla-templates/jsn-reta-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Reta</h3>
+                                    <p class="item-description">Fully-fledged Joomla Real Estate Template EVER</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="https://www.joomlashine.com/images/templates/jsn-dona/Thumb.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_dona">Demo</a>
+                                                    <a class="link-button button-orange" href="https://www.joomlashine.com/joomla-templates/jsn-dona-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Dona</h3>
+                                    <p class="item-description">Multipurpose Template for 10th Joomla Birthday</p>
+                                </div>
+                            </div>
+                        </li>                                                
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-ferado/jsn-ferado.png">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_ferado">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-ferado-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Ferado</h3>
+                                    <p class="item-description">Your Stellar Seller</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-time.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_time">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-time-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Time</h3>
+                                    <p class="item-description">The Benchmark of News and Magazine Sites</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-fidem.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_fidem">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-fidem-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Fidem</h3>
+                                    <p class="item-description">A spirit-filled Church template</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-force.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_force">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-force-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Force</h3>
+                                    <p class="item-description">The perfect synergy of VirtueMart and JoomlaShine</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-one.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_one">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-one-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN One</h3>
+                                    <p class="item-description">E-Commerce template designed with youthful energy</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-mini.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_mini">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-mini-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Mini</h3>
+                                    <p class="item-description">The masterpiece of simplicity for Portfolio website</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-megazine.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_megazine">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-megazine-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Megazine</h3>
+                                    <p class="item-description">Gorgeous & charming design for News/ Magazine Website</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-blank.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_blank">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-blank-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Blank</h3>
+                                    <p class="item-description">A frame of a great masterpiece</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-glass.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_glass">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-glass-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Glass</h3>
+                                    <p class="item-description">Virtual store with radiant colors & knockout features</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-glamo.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_glamo">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-glamo-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Glamo</h3>
+                                    <p class="item-description">Virtual store with radiant colors & knockout features</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-corsa.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_glamo">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-glamo-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Corsa</h3>
+                                    <p class="item-description">Virtual store with radiant colors & knockout features</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-venture.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_venture">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-venture-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Venture</h3>
+                                    <p class="item-description">High quality and multipurpose Joomla! template</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-yoyo.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_yoyo">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-yoyo-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Yoyo</h3>
+                                    <p class="item-description">Distinctive One-page Mania</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-ares.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_ares">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-ares-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Ares</h3>
+                                    <p class="item-description">Portfolio template with styles to mix & match</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-solid.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_solid">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-solid-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Solid</h3>
+                                    <p class="item-description">Sharp layout with remarkably clean design</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-metro.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_metro">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-metro-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Metro</h3>
+                                    <p class="item-description">The latest innovation in the Metro legacy</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-sky.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_sky">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-sky-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Sky</h3>
+                                    <p class="item-description">Clean, polished and lovable Hotel template</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-air.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_air">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-air-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Air</h3>
+                                    <p class="item-description">Incredibly clean, simple design with responsive layout</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-escape.png">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_escape">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-escape-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Escape</h3>
+                                    <p class="item-description">Creative template for retina display</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-mico.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_mico">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-mico-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Mico</h3>
+                                    <p class="item-description">Incredible built-in features for a business portal</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-nuru.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_nuru">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-nuru-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Nuru</h3>
+                                    <p class="item-description">Straightforward design with catchy graphic arrangement</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-neon.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_neon">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-neon-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Neon</h3>
+                                    <p class="item-description">A music website with slick design</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-kido.png">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_kido">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-kido-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Kido</h3>
+                                    <p class="item-description">Shopping site with extended style for VirtueMart</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-boot.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_boot">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-boot-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Boot</h3>
+                                    <p class="item-description">A FREE Template with PRO features and design</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-decor.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_decor">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-decor-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Decor</h3>
+                                    <p class="item-description">Contemporary but charming & classy business template</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-vintage.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_vintage">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-vintage-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Vintage</h3>
+                                    <p class="item-description">Unconventional yet elegant Portfolio template</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-pixel.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_pixel">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-pixel-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Pixel</h3>
+                                    <p class="item-description">Special component & module styling for Easyblog</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-gruve.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_gruve">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-gruve-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Gruve</h3>
+                                    <p class="item-description">Well-crafted template for Restaurant website</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-cube.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_cube">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-cube-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Cube</h3>
+                                    <p class="item-description">Stunning visual design built especially for fashion websites</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-teki.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_teki">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-teki-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Teki</h3>
+                                    <p class="item-description">Mobile website templates designed for gadget fans</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-tendo.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_tendo">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-tendo-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Tendo</h3>
+                                    <p class="item-description">JSN Tendo is an artistic and gorgeous Joomla</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-epic.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_epic">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-epic-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Epic</h3>
+                                    <p class="item-description">The best-selling business template since its birth</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="grid-col_inner">
+                                <div class="jsnlc-item">
+                                    <div class="jsnlc-item-wrapper" id="jsnlc-item-wrapper">
+                                        <div class="item-thumb">
+                                            <img src="http://www.joomlashine.com/images/templates/jsn-dome.jpg">
+                                            <div class="item-mark">
+                                                <div class="item-button-contain">
+                                                    <a class="link-button button-green" target="_blank" href="http://demo.joomlashine.com/index.php?view=demo#jsn_dome">Demo</a>
+                                                    <a class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-dome-joomla-template-details.html">Details</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>JSN Dome</h3>
+                                    <p class="item-description">Charming cozy design with powerful function</p>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+
+
+
+
+
+
+                        
+                    <!-- </div> -->
+                    </ul>
+                    <div id="template-more"><a id="loadMore">More Templates</a></div>
+                </div>
+            </div>
+            <div class="jsn-landpage-pack" id="pack">
+                <div class="jsn-wrap">
+                    <div class="jsn-pack">
+                        <div class="grid-col">
+                            <div class="item">
+                                <h3 style="margin-bottom: 15px; font-size: 24px">JSN Template developer package</h3>
+                                <ul style="color: #666">
+                                    <li><span><strong>33 current PRO UNLIMITED templates</strong> - Worth $1770</span></li>
+                                    <li><span><strong>10+ new templates</strong> during the next 12 months - Worth $590</span></li>
+                                    <li><span>All benefits of PRO UNLIMITED edition</span></li>
+                                    <li><span>Best solution to enjoy all the templates and choose the most suitable</span></li>
+                                </ul>
+                                <p align="center"><a style="text-transform: uppercase; font-weight: normal; padding: 12px 30px;" class="link-button button-orange" href="http://www.joomlashine.com/joomla-templates/jsn-joomla-templates-developer-package.html">Buy JSN Template developer package</a></p>
+                            </div>
+                        </div>
+                        <div class="grid-col grid-lastcol">
+                            <div class="grid-col_inner">
+                                <div class="item">
+                                    <h3 style="margin-bottom: 15px; font-size: 24px">Save money with bundles</h3>
+                                    <a href="http://www.joomlashine.com/custom-pages/discount-policy/discount-policy.html" target="_blank"><img class="image-left" src="images/joomlashine-bundle.jpg" alt="" width="351"/></a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jsn-landpage-payment">
+                    <div class="jsn-wrap">
+                        <p><img src="images/secure-payments1.png" alt="" /></p>
+                        <p><img src="images/secure-payments2.png" alt="" /></p>
+                        <p><img src="images/30-day.png" alt=""/></p>
+                        <p><img src="images/geotrust-logo.png" alt=""/></p>
+                    </div>
+                </div>
+            </div>
+                        
+</body>
+</html>

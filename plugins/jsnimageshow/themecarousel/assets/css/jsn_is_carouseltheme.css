@@ -1,0 +1,23 @@
+/*==================================== SEOCONTENT START =================================*/
+.jsn-themecarousel-seocontent {
+    display: none;
+}
+/*==================================== SEOCONTENT END =================================*/
+.jsn_carousel_prev_button { 
+    background: url("../images/prev.png") no-repeat scroll left top;
+    left: 35px;
+}
+.jsn_carousel_next_button {
+	background: url("../images/next.png") no-repeat scroll left top;
+	right: 35px;
+}
+.jsn_carousel_next_button, .jsn_carousel_prev_button {
+    height: 42px;
+    margin-top: -25px;
+    position: absolute;
+    top: 50%;
+    width: 42px;
+    z-index: 988;
+	cursor: pointer;
+	display: none;
+}

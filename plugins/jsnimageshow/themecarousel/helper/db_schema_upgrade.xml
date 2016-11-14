@@ -1,0 +1,45 @@
+<product name="Theme Carousel" type="plugin">
+	<version number="1.0.0">
+		<release_date>10/11/2012</release_date>
+		<tables>
+			<table id="1" status="ADDED" name="#__imageshow_theme_carousel">
+				<field id="1" status="ADDED" name="theme_id" type="int(11) unsigned" primary_key="yes"/>
+				<field id="2" status="ADDED" name="image_source" type="char(150)" not_null="yes" default_value="thumbnails"/>
+				<field id="3" status="ADDED" name="image_width" type="char(150)"/>
+				<field id="4" status="ADDED" name="image_height" type="char(150)"/>
+				<field id="5" status="ADDED" name="view_angle" type="char(150)"  not_null="yes" default_value="0"/>
+				<field id="6" status="ADDED" name="transparency" type="char(150)"  not_null="yes" default_value="50"/>
+				<field id="7" status="ADDED" name="scale" type="char(150)"  not_null="yes" default_value="35"/>
+				<field id="8" status="ADDED" name="animation_duration" type="char(150)"  not_null="yes" default_value="0.6"/>
+				<field id="9" status="ADDED" name="click_action" type="char(150)"  not_null="yes" default_value="show_original_image"/>
+				<field id="10" status="ADDED" name="open_link_in" type="char(150)"  not_null="yes" default_value="current_browser"/>
+				<field id="11" status="ADDED" name="orientation" type="char(150)"  not_null="yes" default_value="horizontal"/>
+				<field id="12" status="ADDED" name="enable_drag_action" type="char(150)"  not_null="yes" default_value="no"/>
+				<field id="13" status="ADDED" name="show_caption" type="char(150)"  not_null="yes" default_value="yes"/>
+				<field id="14" status="ADDED" name="caption_css" type="char(150)"/>
+				<field id="15" status="ADDED" name="caption_opacity" type="char(150)"  not_null="yes" default_value="75"/>
+				<field id="16" status="ADDED" name="auto_play" type="char(150)"  not_null="yes" default_value="no"/>
+				<field id="17" status="ADDED" name="slide_timing" type="char(150)"  not_null="yes" default_value="3"/>
+				<field id="18" status="ADDED" name="pause_on_mouse_over" type="char(150)"  not_null="yes" default_value="yes"/>
+			</table>
+		</tables>
+	</version>
+	<version number="1.0.1">
+		<release_date>12/11/2012</release_date>
+		<tables>
+			<table id="1" status="CHANGED" name="#__imageshow_theme_carousel">	
+				<field id="14" status="REMOVED" name="caption_css"/>
+				<field id="19" status="ADDED" name="diameter" type="char(150)" not_null="yes" default_value="50"/>
+				<field id="20" status="ADDED" name="image_border_thickness" type="char(150)" not_null="yes" default_value="5"/>
+				<field id="21" status="ADDED" name="image_border_color" type="char(150)" not_null="yes" default_value="#666666"/>
+				<field id="22" status="ADDED" name="caption_background_color" type="char(150)" not_null="yes" default_value="#000000"/>
+				<field id="23" status="ADDED" name="caption_show_title" type="char(150)" not_null="yes" default_value="yes"/>
+				<field id="24" status="ADDED" name="caption_title_css" type="char(150)" not_null="yes" default_value=""/>
+				<field id="25" status="ADDED" name="caption_show_description" type="char(150)" not_null="yes" default_value="yes"/>
+				<field id="26" status="ADDED" name="caption_description_length_limitation" type="char(150)" not_null="yes" default_value="50"/>
+				<field id="27" status="ADDED" name="caption_description_css" type="char(150)" not_null="yes" default_value=""/>
+				<field id="28" status="ADDED" name="navigation_presentation" type="char(150)" not_null="yes" default_value="show"/>
+			</table>
+		</tables>
+	</version>
+</product>  

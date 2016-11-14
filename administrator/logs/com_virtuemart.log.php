@@ -1,0 +1,7 @@
+#
+#<?php die("Forbidden."); ?>
+
+2016-11-12 19:59:53 ERROR vmError: Warning, the Safe Path is empty, for safety reasons it is very important to create a folder in a path not accessible by an URL or unguessable name, create also a folder 'invoices' and 'keys' in it to store your sensitive data secure. Our suggested path is for your system 'C:\xampp\htdocs\vmfiles\'. <br>You can also use complex folder name as 'password' for example 'C:\xampp\htdocs\joomla/administrator/components/com_virtuemart\NY98Qi0Zs1Md\'. Use this link to the <a href='http://localhost:8888/joomla/administrator/index.php?option=com_virtuemart&view=config' >config</a>
+2016-11-14 10:36:12 ERROR vmError: Warning, the Safe Path is empty, for safety reasons it is very important to create a folder in a path not accessible by an URL or unguessable name, create also a folder 'invoices' and 'keys' in it to store your sensitive data secure. Our suggested path is for your system 'C:\xampp\htdocs\vmfiles\'. <br>You can also use complex folder name as 'password' for example 'C:\xampp\htdocs\joomla/administrator/components/com_virtuemart\ebYht3pduwOU\'. Use this link to the <a href='http://localhost:8888/joomla/administrator/index.php?option=com_virtuemart&view=config' >config</a>
+2016-11-14 10:39:21 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path C:\xampp\htdocs\vmfiles\
+2016-11-14 14:33:59 ERROR vmError: PayPal credentials are not set [payment name:PayPal express, payment id:3]
